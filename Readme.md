@@ -33,6 +33,64 @@ This project is built using **Node.js + Express** with **PostgreSQL** as the dat
 
 
 ---
+project folder:
+student-skill-portfolio-hub/
+│
+│── client/                          # Frontend (HTML, CSS, JS)
+│   ├── index.html                   # Landing page
+│   ├── login.html                   # Login page
+│   ├── register.html                # Register page
+│   ├── profile.html                 # Student profile page
+│   ├── search.html                  # Search students by skill
+│   │
+│   ├── css/
+│   │   ├── style.css                # Main styles
+│   │   └── auth.css                 # Login/Register specific styles
+│   │
+│   └── js/
+│       ├── auth.js                  # Login/Register logic
+│       ├── profile.js               # Profile handling
+│       ├── search.js                # Search logic
+│       ├── utils.js                 # Helper functions (API calls, token storage)
+│       └── main.js                  # Common scripts
+│
+│
+│── server/                          # Backend (Node.js + Express + PostgreSQL)
+│   ├── src/
+│   │   ├── config/
+│   │   │   ├── db.js                # PostgreSQL connection
+│   │   │   └── googlestrategy.js          # Google OAuth (optional later)
+│   │   │
+│   │   ├── controllers/
+│   │   │   ├── authController.js    # Register/Login logic
+│   │   │   ├── profileController.js # Student profile CRUD
+│   │   │   └── searchController.js  # Search by skill
+│   │   │
+│   │   ├── models/
+│   │   │   ├── userModel.js         # User queries
+│   │   │   ├── profileModel.js      # Profile queries
+│   │   │   └── skillModel.js        # Skill queries
+│   │   │
+│   │   ├── routes/
+│   │   │   ├── authRoutes.js        # /api/auth
+│   │   │   ├── profileRoutes.js     # /api/profile
+│   │   │   └── searchRoutes.js      # /api/search
+│   │   │
+│   │   ├── middleware/
+│   │   │   ├── authMiddleware.js    # JWT validation
+│   │   │   └── errorHandler.js      # Central error handler
+│   │   │
+│   │   ├── utils/
+│   │   │   ├── generateToken.js     # JWT generator
+│   │   │   └── validators.js        # Input validation
+│   │   │
+│   │   └── app.js                   # Express app entry point
+│   │
+│   ├── .env.example                 # Env template
+│   └── package.json
+│
+│── README.md                        # Documentation
+
 
 ## ⚙️ Setup Instructions
 
@@ -99,3 +157,4 @@ GET /api/students/search?skill=JavaScript → Search students by skill
 🤝 Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you’d like to change.
+
