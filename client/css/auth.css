@@ -1,0 +1,17 @@
+/* Extra styles for login & register pages */
+body {
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+}
+
+form {
+  max-width: 320px;
+  margin-top: 50px;
+}
+
+button {
+  background: #28a745;
+}
+
+button:hover {
+  background: #1e7e34;
+}

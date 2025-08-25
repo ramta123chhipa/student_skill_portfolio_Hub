@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search Students</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="search-container">
+    <h2>Search Students</h2>
+    <form id="searchForm">
+      <input type="text" id="skill" placeholder="Skill (e.g. JavaScript)" />
+      <input type="text" id="branch" placeholder="Branch (e.g. CSE)" />
+      <input type="text" id="year" placeholder="Year (e.g. 3rd)" />
+      <button type="submit">Search</button>
+    </form>
+    <div id="results"></div>
+    <button onclick="window.location.href='profile.html'">⬅ Back to Profile</button>
+  </div>
+  <script src="js/search.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
