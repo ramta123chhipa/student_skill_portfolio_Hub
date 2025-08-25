@@ -42,10 +42,12 @@ student-skill-portfolio-hub/
 │   ├── register.html                # Register page
 │   ├── profile.html                 # Student profile page
 │   ├── search.html                  # Search students by skill
+
 │   │
 │   ├── css/
 │   │   ├── style.css                # Main styles
 │   │   └── auth.css                 # Login/Register specific styles
+
 │   │
 │   └── js/
 │       ├── auth.js                  # Login/Register logic
@@ -53,6 +55,7 @@ student-skill-portfolio-hub/
 │       ├── search.js                # Search logic
 │       ├── utils.js                 # Helper functions (API calls, token storage)
 │       └── main.js                  # Common scripts
+
 │
 │
 │── server/                          # Backend (Node.js + Express + PostgreSQL)
@@ -60,31 +63,38 @@ student-skill-portfolio-hub/
 │   │   ├── config/
 │   │   │   ├── db.js                # PostgreSQL connection
 │   │   │   └── googlestrategy.js          # Google OAuth (optional later)
+
 │   │   │
 │   │   ├── controllers/
 │   │   │   ├── authController.js    # Register/Login logic
 │   │   │   ├── profileController.js # Student profile CRUD
 │   │   │   └── searchController.js  # Search by skill
+
 │   │   │
 │   │   ├── models/
 │   │   │   ├── userModel.js         # User queries
 │   │   │   ├── profileModel.js      # Profile queries
 │   │   │   └── skillModel.js        # Skill queries
+
 │   │   │
 │   │   ├── routes/
 │   │   │   ├── authRoutes.js        # /api/auth
 │   │   │   ├── profileRoutes.js     # /api/profile
 │   │   │   └── searchRoutes.js      # /api/search
+
 │   │   │
 │   │   ├── middleware/
 │   │   │   ├── authMiddleware.js    # JWT validation
 │   │   │   └── errorHandler.js      # Central error handler
+
 │   │   │
 │   │   ├── utils/
 │   │   │   ├── generateToken.js     # JWT generator
 │   │   │   └── validators.js        # Input validation
+
 │   │   │
 │   │   └── app.js                   # Express app entry point
+
 │   │
 │   ├── .env.example                 # Env template
 │   └── package.json
@@ -157,4 +167,5 @@ GET /api/students/search?skill=JavaScript → Search students by skill
 🤝 Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you’d like to change.
+
 
